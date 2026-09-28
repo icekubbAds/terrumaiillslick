@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>DOODLE.EXE 🫠</title>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>illslick Games</title>
 <style>
 :root{--p:#ff3cac;--b:#2b86c5;--l:#c6ff3d;--card:rgba(255,255,255,.08)}
 *{box-sizing:border-box;margin:0}
@@ -109,7 +109,7 @@ function home(){
  const rc=h('input',{placeholder:'โค้ดห้อง 4 ตัว',maxlength:4,value:q.toUpperCase(),style:'text-transform:uppercase;text-align:center;font-weight:800'});
  const nn=h('input',{placeholder:'ชื่อเธอคือ',maxlength:14,value:ID.name});nn.oninput=()=>ID.name=nn.value;
  const big=h('div',{c:'av',style:'font-size:64px'},ID.av);
- app.replaceChildren(h('div',{c:'logo'},'DOODLE.EXE 🫠'),h('p',{c:'c'},'วาดมั่ว ส่งต่อ แล้วดูสายพังกันทั้งห้อง 💀'),
+ app.replaceChildren(h('div',{c:'logo'},'illslick Games'),h('p',{c:'c'},'มาร้องเพลงillslick ด้วยกันเถอะ'),
   h('div',{c:'card c'},big,nn,h('div',{c:'row c',style:'margin-top:10px;max-height:110px;overflow:auto'},AV.map(a=>h('button',{c:'g',style:'padding:4px 8px;font-size:22px',onclick:()=>{ID.av=a;big.textContent=a;sfx.vote()}},a)))),
   h('div',{c:'card'},h('button',{style:'width:100%',onclick:()=>join(true,'')},'สร้างห้องเลย 🚀'),h('p',{c:'c',style:'margin:10px'},'หรือ'),h('div',{c:'row'},rc,h('button',{onclick:()=>join(false,rc.value)},'เข้าห้อง'))));
  if(q&&ID.name&&!joined)join(false,q)}
